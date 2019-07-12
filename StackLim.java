@@ -42,12 +42,12 @@ public class StackLim {
   
   public Object top () throws  StackVaziaException  {
     if(this.empty())
-      throw new  StackVaziaException("Stack vazia @top!")
+      throw new  StackVaziaException("Stack vazia @top!");
     else
-      return stack.getE(numElem - 1);
+      return stack.get(numElem - 1);
   }
   
-  public string output () {
+  public String output () {
     StringBuilder s = new StringBuilder();
     for(int i=numElem - 1; i >= 0; i--)
       s.append(stack.get(i).toString());
